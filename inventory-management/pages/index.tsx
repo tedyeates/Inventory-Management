@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link';
 import clientPromise from "../lib/mongodb";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
@@ -41,6 +42,13 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <nav>
+        <ul>
+          <li>
+            <Link href="/inventory/instock">Instock</Link>
+          </li>
+        </ul>
+      </nav>
       <main>
         <h1 className="title">
           Inventory Management Coming Soon...
