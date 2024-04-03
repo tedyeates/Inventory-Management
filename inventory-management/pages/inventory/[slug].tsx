@@ -14,42 +14,13 @@ type InventoryProp = {
     totalCount: number
 }
 
-const InventoryTable : React.FC<InventoryProp> = ({ data, totalCount }) => {
-    const [tableData, setTableData] = useState(data)
-
-    if (!data) return (
-        <main>No data available!</main>
-    )
-
-    const tableHeaders = data ?? Object.keys(data[0])
-
-    const headers = () => tableHeaders.map(key => (
-        <th key={key}>{key}</th>
-    ));
-
-    const rows = () => {
-        return tableData.map(row => (
-            <tr key={row._id}>
-                {tableHeaders.map((key) => (
-                    <td key={key}>{row[key]}</td>
-                ))}
-            </tr>
-        ))
-    }
-
+const InventoryPage : React.FC<InventoryProp> = ({ data, totalCount }) => {
     return (
-        <table>
-            <thead>
-                {headers()}
-            </thead>
-            <tbody>
-                {rows()}
-            </tbody>
-        </table>
+        
     )
 }
 
-export default InventoryTable
+export default InventoryPage
 
 export const getServerSideProps: GetServerSideProps = async ({params}) => {
     const { slug } = params as Params

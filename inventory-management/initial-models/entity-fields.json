@@ -1,0 +1,164 @@
+[{
+    "_id": "instock",
+    "label": "Instock",
+    "fields": [
+        {
+            "name": "invoice_id",
+            "label": "Invoice ID",
+            "type": "text"
+        },
+        {
+            "name": "order_date",
+            "label": "Order Date",
+            "type": "date"
+        },
+        {
+            "name": "purchase_order_id",
+            "label": "Purchase Order ID",
+            "type": "text",
+            "format": "YYMMXXXXXX"
+        },
+        {
+            "name": "job_id",
+            "label": "Job ID",
+            "type": "text",
+            "format": "YYXXXX"
+        },
+        {
+            "name": "supplier",
+            "label": "Supplier",
+            "type": "text"
+        },
+        {
+            "name": "item",
+            "label": "Item",
+            "type": "select_collection",
+            "options": "item"
+        },
+        {
+            "name": "quantity",
+            "label": "Quantity",
+            "type": "float"
+        },
+        {
+            "name": "unit_price",
+            "label": "Unit Price",
+            "type": "float"
+        },
+        {
+            "name": "total_price",
+            "label": "Total Price",
+            "type": "float",
+            "table_only": true
+        }
+    ]
+},
+{
+    "_id": "outstock",
+    "label": "Outstock",
+    "fields": [
+        {
+            "name": "order_date",
+            "label": "Order Date",
+            "type": "date"
+        },
+        {
+            "name": "job_id",
+            "label": "Job ID",
+            "type": "text",
+            "format": "YYXXXX"
+        },
+        {
+            "name": "item",
+            "label": "Item",
+            "type": "select_collection",
+            "options": "item"
+        },
+        {
+            "name": "quantity",
+            "label": "Quantity",
+            "type": "float"
+        },
+        {
+            "name": "customer",
+            "label": "Customer",
+            "type": "text"
+        },
+        {
+            "name": "stock_id",
+            "label": "Stock ID",
+            "type": "text"
+        }
+    ]
+},
+{
+    "_id": "item",
+    "label": "Item",
+    "fields": [
+        {
+            "name": "code",
+            "label": "Code",
+            "type": "text"
+        },
+        {
+            "name": "description",
+            "label": "Description",
+            "type": "text_area"
+        },
+        {
+            "name": "group",
+            "label": "Group",
+            "type": "select",
+            "options": [
+                "group1",
+                "group2"
+            ]
+
+        },
+        {
+            "name": "unit",
+            "label": "Unit",
+            "type": "text"
+        },
+        {
+            "name": "location",
+            "label": "Location",
+            "type": "text"
+        },
+        {
+            "name": "max_price",
+            "label": "Max Price",
+            "type": "float",
+            "table_only": true
+        },
+        {
+            "name": "min_price",
+            "label": "Min Price",
+            "type": "float",
+            "table_only": true
+        },
+        {
+            "name": "quantity_instock",
+            "label": "Quantity Instock",
+            "type": "float",
+            "table_only": true
+        },
+        {
+            "name": "quantity_outstock",
+            "label": "Quantity Outstock",
+            "type": "float",
+            "table_only": true
+        },
+        {
+            "name": "brand",
+            "label": "Brand",
+            "type": "select",
+            "options": [
+                "brand1",
+                "brand2"
+            ]
+        }
+    ]
+}
+
+]
