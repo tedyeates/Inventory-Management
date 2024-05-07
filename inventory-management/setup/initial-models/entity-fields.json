@@ -3,6 +3,11 @@
     "label": "Instock",
     "fields": [
         {
+            "name": "label",
+            "label": "Label",
+            "type": "text"
+        },
+        {
             "name": "invoice_id",
             "label": "Invoice ID",
             "type": "text"
@@ -58,6 +63,11 @@
     "label": "Outstock",
     "fields": [
         {
+            "name": "label",
+            "label": "Label",
+            "type": "text"
+        },
+        {
             "name": "order_date",
             "label": "Order Date",
             "type": "date"
@@ -95,6 +105,11 @@
     "_id": "item",
     "label": "Item",
     "fields": [
+        {
+            "name": "label",
+            "label": "Label",
+            "type": "text"
+        },
         {
             "name": "code",
             "label": "Code",

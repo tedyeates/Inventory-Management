@@ -6,14 +6,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mantine/charts": "^7.8.1",
+    "@mantine/core": "^7.8.1",
+    "@mantine/dates": "^7.8.1",
+    "@mantine/dropzone": "^7.8.1",
+    "@mantine/form": "^7.8.1",
+    "@mantine/hooks": "^7.8.1",
+    "@mantine/notifications": "^7.8.1",
+    "dayjs": "^1.11.10",
     "mongodb": "^6.5.0",
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.6"
   },
   "devDependencies": {
     "@types/node": "18.7.5",
     "@types/react": "16.9.17",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.14.4",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "4.6.3"
   }
 }

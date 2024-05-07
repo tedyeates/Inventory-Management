@@ -54,7 +54,7 @@ export default function Home({
         <nav>
             <ul>
                 {pages?.map((page) => (
-                    <li>
+                    <li key={page._id}>
                         <Link href={`/inventory/${page._id}`}>{page.label}</Link>
                     </li>
                 ))}
